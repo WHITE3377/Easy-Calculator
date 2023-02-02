@@ -2,15 +2,15 @@
 
 string action;
 
-Console.WriteLine("Введiть перше число");
+Console.WriteLine("Enter first number");
 
 FirstNum = double.Parse(Console.ReadLine());
 
-Console.WriteLine("Введiть друге число");
+Console.WriteLine("Enter second number");
 
 SecondNum = double.Parse(Console.ReadLine());
 
-Console.WriteLine("Виберiть операцію: '+' '-' '/' '*' ");
+Console.WriteLine("select operation: '+' '-' '/' '*' ");
 action = Console.ReadLine();
 
 switch (action)
@@ -35,7 +35,6 @@ switch (action)
         } 
         break;
     default:
-        Console.WriteLine("Ви написали не той знак");
+        Console.WriteLine("Error! unknown action!");
         break;
-
 }
